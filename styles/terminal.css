@@ -1,0 +1,95 @@
+:root {
+    --bg-color: #0a0a0a;
+    --text-color: #0f0;
+    --prompt-color: #ff003c;
+    --highlight-color: #0ff;
+    --font-size: 16px;
+    --glow-intensity: 10px;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Courier New', monospace;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.terminal {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    overflow-y: auto;
+    background: var(--bg-color);
+    font-size: var(--font-size);
+    text-shadow: 0 0 var(--glow-intensity) var(--text-color);
+}
+
+.output {
+    white-space: pre-wrap;
+    margin-bottom: 0.5rem;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    color: var(--prompt-color);
+    margin-right: 0.5rem;
+}
+
+#command-input {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-family: 'Courier New', monospace;
+    flex: 1;
+    outline: none;
+    font-size: var(--font-size);
+}
+
+.cursor {
+    width: 0.6rem;
+    height: 1rem;
+    background: var(--text-color);
+    animation: blink 0.8s step-end infinite;
+    margin-left: 0.2rem;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.matrix-bg, .glitch-bg, .circuit-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.glitch-bg {
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(45deg, transparent, transparent 5px, var(--text-color) 5px, var(--text-color) 10px);
+    animation: glitchShift 0.3s infinite;
+}
+
+@keyframes glitchShift {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(3px, -3px); }
+    50% { transform: translate(-3px, 3px); }
+    75% { transform: translate(3px, 3px); }
+    100% { transform: translate(0, 0); }
+}
+
+.circuit-bg {
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><path d="M0 25h10v10h10v-20h10v10h10" stroke="var(--text-color)" fill="none" stroke-width="2"/></svg>') repeat;
+    opacity: 0.2;
+}
