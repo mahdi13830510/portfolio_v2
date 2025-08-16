@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahdi Dolati :: Cyber Backend Overlord</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main_page.css">
+</head>
+<body>
+<canvas class="matrix-rain" id="matrix"></canvas>
+
+<!-- Navigation -->
+<nav class="nav" role="navigation">
+    <div class="nav-content">
+        <h1>root@mahdi:~</h1>
+        <i class="fas fa-bars hamburger" aria-label="Menu"></i>
+        <div class="nav-links">
+            <a href="#about" class="nav-link glitch">./home</a>
+            <a href="#about-me" class="nav-link glitch">./about_me</a>
+            <a href="#downloads" class="nav-link glitch">./downloads</a>
+            <a href="bridge.html" class="nav-link glitch" target="_self">./terminal</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <!-- Hero Section -->
+    <section id="about" class="hero">
+        <div class="hero-content">
+            <i class="fab fa-linux linux-penguin" aria-hidden="true"></i>
+            <h1 class="terminal-header glitch">Mahdi Dolati</h1>
+            <div class="typing-animation">
+                <p>> Passionate Backend Developer <span class="terminal-cursor">_</span></p>
+                <p>> Dedicated Linux Enthusiast <span class="terminal-cursor">_</span></p>
+                <p>> Server Architect <span class="terminal-cursor">_</span></p>
+                <p>> Open Source Advocate <span class="terminal-cursor">_</span></p>
+            </div>
+            <div class="system-status">
+                <p>> System Status: ONLINE | Uptime: 99.9% | Last Login: Just Now</p>
+            </div>
+        </div>
+    </section>
+    <audio id="background-music" autoplay loop>
+        <source src="song/cyberpunk.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- About Me Section -->
+    <section id="about-me">
+        <div class="container">
+            <h2 data-aos="fade-down">> $ whoami</h2>
+            <div class="terminal-card" data-aos="fade-up">
+                <p>> $ cat /home/mahdi/profile.txt</p>
+                <p>
+                    Hello, I’m Mahdi Dolati a dedicated backend developer who loves building reliable, scalable systems using Python, Django, and cloud technologies. With over 2 years of experience, I continuously strive to learn and grow, while embracing the open source community and the spirit of innovation.
+                </p>
+                <p>> $ ls /home/mahdi/interests</p>
+                <ul>
+                    <li>Linux Kernel</li>
+                    <li>Distributed Systems</li>
+                    <li>Cybersecurity & Ethical Hacking</li>
+                    <li>Sci-Fi & Cyberpunk Culture</li>
+                    <li>Retro & Indie Gaming</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 data-aos="fade-down">> $ experience</h2>
+            <div class="projects-grid">
+                <div class="terminal-card" data-aos="fade-up">
+                    <h3>> $ cat /work/senior_backend_dev.txt</h3>
+                    <p><strong>Senior Backend Developer</strong> @Husan</p>
+                    <p><em>2023 - Present</em></p>
+                    <p>
+                        Developing reliable APIs using Django and FastAPI, with a focus on efficiency and user-centric design.
+                    </p>
+                </div>
+                <div class="terminal-card" data-aos="fade-up">
+                    <h3>> $ cat /work/devops_engineer.txt</h3>
+                    <p><strong>DevOps Engineer</strong> @Bulut_Takin</p>
+                    <p><em>2023 - 2024</em></p>
+                    <p>
+                        Automating deployments with Jenkins and Docker, and managing AWS infrastructures with Terraform, all while learning and growing each day.
+                    </p>
+                </div>
+                <div class="terminal-card" data-aos="fade-up">
+                    <h3>> $ cat /work/freelance_dev.txt</h3>
+                    <p><strong>Junior Backend Developer</strong> @Inonext</p>
+                    <p><em>2022 - 2023</em></p>
+                    <p>
+                        Building RESTful APIs for startups with care and attention, ensuring robust solutions that meet real user needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2 data-aos="fade-down">> $ education</h2>
+            <div class="projects-grid">
+                <div class="terminal-card" data-aos="fade-up">
+                    <h3>> $ cat /edu/bsc_cs.txt</h3>
+                    <p><strong>B.Sc. in Computer Engineering</strong></p>
+                    <p>Tabriz University, 2022 - Present</p>
+                    <p>
+                        A thorough study of algorithms, distributed systems, and operating system design that laid the foundation for my passion in technology.
+                    </p>
+                </div>
+                <div class="terminal-card" data-aos="fade-up">
+                    <h3>> $ cat /edu/aws_cert.txt</h3>
+                    <p><strong>AWS Certified Solutions Architect</strong></p>
+                    <p>Issued: 2024</p>
+                    <p>
+                        Gained practical insights into designing and deploying cloud architectures, further fueling my commitment to innovation.
+                    </p>
+                </div>
+                <div class="terminal-card" data-aos="fade-up">
+                    <h3>> $ cat /edu/linux_cert.txt</h3>
+                    <p><strong>Linux Professional Institute Certification (LPIC-1)</strong></p>
+                    <p>Issued: 2024</p>
+                    <p>
+                        Demonstrated proficiency in Linux system administration, affirming my ongoing dedication to learning and collaboration.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 data-aos="fade-down">> $ skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="zoom-in">
+                    <div class="flip-container">
+                        <div class="front">
+                            <h3><i class="fas fa-server"></i> Backend Development</h3>
+                            <p>Django | FastAPI | Spring Boot</p>
+                        </div>
+                        <div class="back">
+                            <p>Developing robust APIs and microservices with a focus on user needs and sustainability.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in">
+                    <div class="flip-container">
+                        <div class="front">
+                            <h3><i class="fas fa-database"></i> Data Storage</h3>
+                            <p>PostgreSQL | MySQL | Redis | MongoDB</p>
+                        </div>
+                        <div class="back">
+                            <p>Managing and optimizing data storage solutions with care and precision.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in">
+                    <div class="flip-container">
+                        <div class="front">
+                            <h3><i class="fas fa-infinity"></i> DevOps & Automation</h3>
+                            <p>Docker | Kubernetes | AWS | Jenkins</p>
+                        </div>
+                        <div class="back">
+                            <p>Implementing continuous integration and deployment pipelines that simplify development.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in">
+                    <div class="flip-container">
+                        <div class="front">
+                            <h3><i class="fas fa-code"></i> Programming</h3>
+                            <p>Python | Java | C | C++ | JavaScript</p>
+                        </div>
+                        <div class="back">
+                            <p>Writing clear, maintainable code and always eager to learn new paradigms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in">
+                    <div class="flip-container">
+                        <div class="front">
+                            <h3><i class="fas fa-cloud"></i> Cloud Computing</h3>
+                            <p>AWS | Azure | GCP</p>
+                        </div>
+                        <div class="back">
+                            <p>Designing cloud solutions with an emphasis on reliability and efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in">
+                    <div class="flip-container">
+                        <div class="front">
+                            <h3><i class="fas fa-tools"></i> Dev Tools</h3>
+                            <p>Bash | Git | Vim | Ansible | Terraform</p>
+                        </div>
+                        <div class="back">
+                            <p>Utilizing essential tools to streamline development and foster collaboration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--    &lt;!&ndash; Projects Section &ndash;&gt;-->
+<!--    <section id="projects">-->
+<!--        <div class="container">-->
+<!--            <h2 data-aos="fade-down">> $ projects</h2>-->
+<!--            <div class="projects-grid">-->
+<!--                <div class="terminal-card" data-aos="fade-up">-->
+<!--                    <h3>> $ cat /projects/task_queue.txt</h3>-->
+<!--                    <p>-->
+<!--                        Built a distributed task queue system using Celery and RabbitMQ, ensuring efficient task processing.-->
+<!--                    </p>-->
+<!--                    <p>Tech: Python, Celery, RabbitMQ, Docker</p>-->
+<!--                    <a href="https://github.com" target="_blank">View on GitHub</a>-->
+<!--                </div>-->
+<!--                <div class="terminal-card" data-aos="fade-up">-->
+<!--                    <h3>> $ cat /projects/kernel_driver.txt</h3>-->
+<!--                    <p>-->
+<!--                        Developed a custom Linux kernel printer driver to improve hardware integration and system performance.-->
+<!--                    </p>-->
+<!--                    <p>Tech: C, Linux Kernel, Make</p>-->
+<!--                    <a href="https://github.com" target="_blank">View on GitHub</a>-->
+<!--                </div>-->
+<!--                <div class="terminal-card" data-aos="fade-up">-->
+<!--                    <h3>> $ cat /projects/api_gateway.txt</h3>-->
+<!--                    <p>-->
+<!--                        Created a secure API gateway with rate limiting and JWT authentication using Flask and Redis.-->
+<!--                    </p>-->
+<!--                    <p>Tech: Django, Redis, Nginx</p>-->
+<!--                    <a href="https://github.com" target="_blank">View on GitHub</a>-->
+<!--                </div>-->
+<!--                <div class="terminal-card" data-aos="fade-up">-->
+<!--                    <h3>> $ cat /projects/load_balancer.txt</h3>-->
+<!--                    <p>-->
+<!--                        Implemented a dynamic load balancer in Python that improved server uptime and performance.-->
+<!--                    </p>-->
+<!--                    <p>Tech: Python, HAProxy, AWS</p>-->
+<!--                    <a href="https://github.com" target="_blank">View on GitHub</a>-->
+<!--                </div>-->
+<!--                <div class="terminal-card" data-aos="fade-up">-->
+<!--                    <h3>> $ cat /projects/chat_app.txt</h3>-->
+<!--                    <p>-->
+<!--                        Designed a real-time chat application backend using WebSockets and Django Channels to support engaging conversations.-->
+<!--                    </p>-->
+<!--                    <p>Tech: Django, Redis, WebSockets</p>-->
+<!--                    <a href="https://github.com" target="_blank">View on GitHub</a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash; Upcoming Projects &ndash;&gt;-->
+<!--            <div class="upcoming-projects" data-aos="fade-up">-->
+<!--                <h3>Coming Soon:</h3>-->
+<!--                <ul>-->
+<!--                    <li>> $ cat /projects/data_mining.txt - A Data Mining Platform for uncovering hidden insights.</li>-->
+<!--                    <li>> $ cat /projects/ml_ann.txt - Machine Learning & Neural Networks for predictive analytics.</li>-->
+<!--                    <li>> $ cat /projects/game_dev.txt - An Indie Game Backend for immersive, creative experiences.</li>-->
+<!--                    <li>> $ cat /projects/movie_magic.txt - An Interactive Movie Data Platform merging cinema with real-time analytics.</li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+    <!-- Downloads Section -->
+    <section id="downloads">
+        <div class="container">
+            <h2 data-aos="fade-down">> $ downloads</h2>
+            <div class="projects-grid">
+                <div class="terminal-card" data-aos="fade-up">
+                    <h3>> $ cat /downloads/resume.txt</h3>
+                    <p>
+                        Download my latest resume – overview of my professional journey.
+                    </p>
+                    <a href="resume.txt">Download</a>
+                </div>
+                <div class="terminal-card" data-aos="fade-up">
+                    <h3>> $ cat /downloads/vim_config.tar</h3>
+                    <p>
+                        My custom and Vim configurations—crafted.
+                    </p>
+                    <a href="vim_config.tar">Download</a>
+                </div>
+                <div class="terminal-card" data-aos="fade-up">
+                    <h3>> $ cat /downloads/.zshrc</h3>
+                    <p>
+                        My custom .zshrc to boost productivity and clarity.
+                    </p>
+                    <a href=".zshrc">Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 data-aos="fade-down">> $ contact</h2>
+            <div class="projects-grid">
+                <div class="terminal-card" data-aos="fade-up">
+                    <h3>> $ cat /contact/info.txt</h3>
+                    <p>Email: mahdi.dlt13830510@gmail.com</p>
+                    <p>GitHub: <a href="https://github.com/mahdi13830510" target="_blank">github.com/mahdi-dolati</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/mahdi-dlt-81857628a/" target="_blank">linkedin.com/in/mahdi-dolati</a></p>
+                </div>
+                <div class="terminal-card" data-aos="fade-up">
+                    <form class="contact-form" action="https://formspree.io/f/xrbpbjgo" method="POST">
+                        <input type="text" name="name" placeholder="> Enter your name" required aria-label="Name">
+                        <input type="email" name="email" placeholder="> Enter your email" required aria-label="Email">
+                        <textarea name="message" rows="5" placeholder="> Write your message" required aria-label="Message"></textarea>
+                        <button type="submit" class="cyber-button">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="scripts/main_page.js"></script>
+</body>
+</html>

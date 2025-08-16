@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahdi Dolati :: Cyber Backend Wizard</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="styles/bridge_page.css" rel="stylesheet">
+</head>
+<body>
+<canvas class="matrix-rain" id="matrix"></canvas>
+
+<!-- Navigation -->
+<nav class="nav">
+    <div class="nav-content">
+        <h1>root@mahdi:~</h1>
+        <div class="nav-links">
+            <div class="dropdown">
+                <a href="index.html" class="nav-link glitch">./home</a>
+                <div class="dropdown-content">
+                    <a href="index.html#about-me">About Me</a>
+                    <a href="index.html#experience">Experience</a>
+                    <a href="index.html#education">Education</a>
+                </div>
+            </div>
+            <a href="index.html#skills" class="nav-link glitch">./skills</a>
+            <a href="index.html#projects" class="nav-link glitch">./projects</a>
+            <a href="index.html#contact" class="nav-link glitch">./contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="about" class="hero">
+    <div class="hero-content">
+        <p id="hero-text"></p>
+        <a href="terminal.html" class="cyber-button">Enter Terminal</a>
+    </div>
+</section>
+
+<!-- Theme Switcher -->
+<div class="theme-switcher">
+    <button class="cyber-button" onclick="setTheme('green')">Green</button>
+    <button class="cyber-button" onclick="setTheme('blue')">Blue</button>
+    <button class="cyber-button" onclick="setTheme('purple')">Purple</button>
+    <button class="cyber-button" onclick="setTheme('custom')">Custom</button>
+</div>
+
+
+<!-- Audio for Background Music -->
+<audio id="background-music" autoplay loop>
+    <source src="song/cyberpunk.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="scripts/bridge_page.js"></script>
+</body>
+</html>
