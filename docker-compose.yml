@@ -26,7 +26,6 @@ services:
     networks:
       - nextjs-network
 
-  # Optional: Add nginx reverse proxy for production
   nginx:
     image: nginx:alpine
     ports:
